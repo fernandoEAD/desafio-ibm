@@ -1,0 +1,56 @@
+
+# DummyJson Client
+
+Projeto Java Spring Boot para interagir com a API [DummyJson](https://dummyjson.com).
+
+## Tecnologias Utilizadas
+
+- **Java 17**
+- **Spring Boot 3.2.11**
+- **Maven**
+- **Docker & Docker Compose**
+
+## Pré-requisitos
+
+- Java 17
+- Maven
+- Docker (opcional)
+
+## Configuração e Execução
+
+### Executando Localmente
+
+1. **Instale as dependências:**
+   ```bash
+   mvn clean install
+   ```
+
+2. **Execute a aplicação:**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+3. A aplicação estará disponível em [http://localhost:8080](http://localhost:8080).
+
+### Executando com Docker
+
+1. **Construa o contêiner Docker:**
+   ```bash
+   docker-compose build
+   ```
+
+2. **Inicie o contêiner:**
+   ```bash
+   docker-compose up
+   ```
+
+3. A aplicação estará disponível em [http://localhost:8080](http://localhost:8080).
+
+## Configuração de Variáveis de Ambiente
+
+- A URL base da API DummyJson pode ser configurada no arquivo `application.yaml` ou diretamente no `docker-compose.yml` como `DUMMYJSON_BASE_URL`.
+
+## Endpoints
+
+A aplicação interage com a API DummyJson e possui alguns endpoints simples para demonstração. Detalhes dos endpoints podem ser encontrados na documentação interna.
+

@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  dummyjson-client:
+    build:
+      context: .
+    ports:
+      - "8083:8080"
+    environment:
+      - DUMMYJSON_BASE_URL=https://dummyjson.com
+    command: mvn spring-boot:run
